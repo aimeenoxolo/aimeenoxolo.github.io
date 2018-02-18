@@ -5,7 +5,7 @@ navigator.geolocation.getCurrentPosition(function(position) {
 	var globalloc = coords;
 	console.log(coords);
 	var target = {"lat": 37.869487, "long": -122.257933}
-	if (compareCoords(coords, target, 1000)) {
+	if (compareCoords(coords, target, 0.0001)) {
 	    document.getElementById("sheet_frame").src = "https://goo.gl/forms/zjvZ4msoYoMeXRJv2";
 	} 
 }, function(error) {
