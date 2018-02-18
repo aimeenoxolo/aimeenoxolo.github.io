@@ -8,7 +8,7 @@ navigator.geolocation.getCurrentPosition(function(position) {
 	if (compareCoords(coords, target, 0.00001)) {
 	    document.getElementById("sheet_frame").src = "https://goo.gl/forms/zjvZ4msoYoMeXRJv2";
 	} else {
-		  document.getElementById("error_message")
+		  document.getElementById("sheet_frame").src = "https://support.office.com/en-us/article/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1"
 	}
 }, function(error) {
     console.log('cant get location');
