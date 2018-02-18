@@ -6,9 +6,11 @@ navigator.geolocation.getCurrentPosition(function(position) {
 	console.log(coords);
 	var target = {"lat": 37.869487, "long": -122.257933}
 	if (compareCoords(coords, target, 0.00001)) {
+      document.getElementById("error_message").style="background-color:white;color:white;padding:0px;"
 	    document.getElementById("sheet_frame").src = "https://goo.gl/forms/zjvZ4msoYoMeXRJv2";
 	} else {
-		  document.getElementById("sheet_frame").src = "https://support.office.com/en-us/article/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1"
+      document.getElementById("error_message").style="background-color:red;color:white;padding:20px;"
+		  document.getElementById("sheet_frame").src = ""
 	}
 }, function(error) {
     console.log('cant get location');
