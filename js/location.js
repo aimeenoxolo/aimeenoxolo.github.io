@@ -8,8 +8,7 @@ navigator.geolocation.getCurrentPosition(function(position) {
 	if (compareCoords(coords, target, 100)) {
 	    document.getElementById("sheet_frame").src = "https://goo.gl/forms/zjvZ4msoYoMeXRJv2";
 	} else {
-		document.getElementById("sheet_frame").src = "https://goo.gl/forms/zjvZ4msoYoMeXRJv2";
-	    // document.getElementById("error_message")
+		  document.getElementById("error_message")
 	}
 }, function(error) {
     console.log('cant get location');
