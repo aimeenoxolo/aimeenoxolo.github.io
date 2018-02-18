@@ -7,7 +7,7 @@ navigator.geolocation.getCurrentPosition(function(position) {
 	var target = {"lat": 37.875457, "long": -122.259108}
   //var target2 = {"lat": 37.870568, "long": -122.251530}
   var target2 = {"lat": 37.862793, "long": -122.253739}
-	if (compareCoords(coords, target, 0.01) or compareCoords(coords,target2, 0.01)) {
+	if (compareCoords(coords, target, 0.01) || compareCoords(coords,target2, 0.01)) {
 	    document.getElementById("sheet_frame").src = "https://goo.gl/forms/zjvZ4msoYoMeXRJv2";
 	} 
 }, function(error) {
